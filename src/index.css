@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #f8fafc;
+    background-image: 
+      radial-gradient(#e2e8f0 1px, transparent 1px),
+      radial-gradient(#f1f5f9 1px, #f8fafc 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    color: #1e293b;
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Playful rounded white card */
+.fun-card {
+  background: #ffffff;
+  border-radius: 1.75rem;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.fun-card-primary {
+  background: #ffffff;
+  border-radius: 1.75rem;
+  border: 2px solid #a7f3d0;
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.1);
+}
+
+/* Custom Scrollbar for smooth scrolling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Soft touch bounce */
+.touch-active:active {
+  transform: scale(0.96);
+}
